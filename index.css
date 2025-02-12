@@ -605,6 +605,7 @@ article:has(:hover, :focus) {
 .harita {
     margin-top: 30px;
 }
+
 .sss {
     text-align: center;
     padding: 60px 20px;
@@ -664,6 +665,7 @@ article:has(:hover, :focus) {
 .sss-item.aktif .sss-soru i {
     transform: rotate(180deg);
 }
+
 .footer {
     background-color: #eee7e7;
     color: rgb(0, 0, 0);
@@ -733,7 +735,38 @@ article:has(:hover, :focus) {
 .footer .fa {
     margin-right: 10px;
 }
+
 .footer-top {
     padding-top: 80px;
     background-color: #ffffff;
+}
+
+.su-damlasi {
+    width: 500px;  /* Daha büyük genişlik */
+    height: 750px; /* Daha uzun */
+    overflow: hidden;
+    clip-path: path("M250 0 Q400 200, 650 300 T250 700 Q50 400, 150 200 T250 0 Z");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 50% 20%, #e0f7fa, #b2ebf2); /* Hafif ışık efekti */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Daha doğal gölge */
+    border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%; /* Daha organik bir damla şekli */
+}
+
+.su-damlasi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.hakkimizda-two-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
 }
