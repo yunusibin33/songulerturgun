@@ -553,7 +553,7 @@ article:has(:hover, :focus) {
 
 .iletisim-bilgileri {
     flex: 1;
-    max-width: 400px;
+    max-width:450px;
     text-align: left;
 }
 
@@ -743,9 +743,8 @@ article:has(:hover, :focus) {
 
 .su-damlasi {
     width: 500px;  /* Daha büyük genişlik */
-    height: 750px; /* Daha uzun */
+    height: 500px; /* Daha uzun */
     overflow: hidden;
-    clip-path: path("M250 0 Q400 200, 650 300 T250 700 Q50 400, 150 200 T250 0 Z");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -759,8 +758,6 @@ article:has(:hover, :focus) {
     height: 100%;
     object-fit: cover;
 }
-
-
 
 .hakkimizda-two-text {
     flex: 1;
