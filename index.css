@@ -772,9 +772,38 @@ article:has(:hover, :focus) {
     .topbar {
         display: none;
     }
-    .collapse.navbar-collapse {
-        display: block !important; /* D-flex yerine block yap */
-        text-align: center; /* İçeriği ortalamak için isteğe bağlı */
+    .navbar-brand {
+        width: 220px;
+    }
+    .hakkimizda-text {
+        padding: 20px;
+    }
+    .footer-container {
+        justify-content: center;
+        display: flex;
     }
 }
 
+@media (max-width: 768px) {
+    .container.d-flex {
+        flex-direction: column; /* Mobilde üst üste getir */
+        align-items: center; /* Ortalamak için */
+        text-align: center; /* Metni ortalar */
+    }
+
+    .col-md-4 {
+        width: 100%; /* Tam genişlik */
+    }
+
+    .col-md-8 {
+        width: 100%; /* Resmin tam genişlik kaplamasını sağlar */
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-md-8 img {
+        max-width: 80%; /* Resmin çok büyük olmasını önler */
+        height: auto;
+        margin-top: 20px; /* Yazıdan sonra boşluk bırakır */
+    }
+}
