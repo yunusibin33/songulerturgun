@@ -767,3 +767,14 @@ article:has(:hover, :focus) {
     color: rgb(0, 0, 0);
     text-align: justify;
 }
+/*mobil*/
+@media (max-width: 768px) {
+    .topbar {
+        display: none;
+    }
+    .collapse.navbar-collapse {
+        display: block !important; /* D-flex yerine block yap */
+        text-align: center; /* İçeriği ortalamak için isteğe bağlı */
+    }
+}
+
